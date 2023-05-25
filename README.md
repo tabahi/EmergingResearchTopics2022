@@ -3,4 +3,8 @@
 
 
 [View as static image](https://tabahi.github.io/EmergingResearchTopics2022/sankey.svg)
+
+and 
+
+
 [GoJS plot here](https://tabahi.github.io/EmergingResearchTopics2022/)

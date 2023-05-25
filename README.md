@@ -2,9 +2,7 @@
  Sankey diagram web preview For Emerging Research Topics during late 2022
 
 
-[View as static image](https://tabahi.github.io/EmergingResearchTopics2022/sankey.svg)
-
-and 
+[View sankey diagram here](https://tabahi.github.io/EmergingResearchTopics2022/)
 
 
-[GoJS plot here](https://tabahi.github.io/EmergingResearchTopics2022/)
+[Lauch GoJS drawing](https://tabahi.github.io/EmergingResearchTopics2022/draw.html)

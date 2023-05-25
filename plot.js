@@ -205,8 +205,21 @@ class SankeyLayout extends go.LayeredDigraphLayout {
 
       // read in the JSON-format data from the "mySavedModel" element
       //load();
-      if(confirm("Loading will take a while. Confirm to load?"))
+
+      setTimeout(()=>{
+
+        if(confirm("Loading will take a while. Confirm to load?"))
         load_json_file();
+        else document.getElementById("msg").innerText = "Loading cancelled.";
+      }, 2000);
+      
+    }
+
+    function make_img()
+    {
+      myDiagram.makeImage({
+        scale: 1,
+      });
     }
 
 

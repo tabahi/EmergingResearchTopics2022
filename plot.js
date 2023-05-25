@@ -217,9 +217,44 @@ class SankeyLayout extends go.LayeredDigraphLayout {
 
     function make_img()
     {
-      myDiagram.makeImage({
+      img = myDiagram.makeImage({
         scale: 1,
       });
+    }
+
+    // When the blob is complete, make an anchor tag for it and use the tag to initiate a download
+    // Works in Chrome, Firefox, Safari, Edge, IE11
+    function download_svg(blob) {
+      var url = window.URL.createObjectURL(blob);
+      var filename = "image.svg";
+
+      var a = document.createElement("a");
+      a.style = "display: none";
+      a.href = url;
+      a.download = filename;
+
+      // IE 11
+      if (window.navigator.msSaveBlob !== undefined) {
+        window.navigator.msSaveBlob(blob, filename);
+        return;
+      }
+
+      document.body.appendChild(a);
+      requestAnimationFrame(() => {
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+      });
+    }
+
+    function makeSvg() {
+
+      document.getElementById("msg").innerText = "Making SVG...";
+      var svg = myDiagram.makeSvg({ scale: 1, background: "white" });
+      var svgstr = new XMLSerializer().serializeToString(svg);
+      var blob = new Blob([svgstr], { type: "image/svg+xml" });
+      document.getElementById("msg").innerText = "SVG download started.";
+      download_svg(blob);
     }
 
 

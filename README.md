@@ -22,14 +22,14 @@
 
 
 
-2. The onward links coming out of the nodes are the same color as the topic nodes. The last run, <span style="color:#00ffff">**2023-01**</span>, has no onward links that's why only the nodes are shown.
+2. The onward links coming out of the nodes are the same color as the topic nodes. The last run <span style="color:#00ffff">**2023-01**</span> is aqua color has no onward links that's why only the nodes are shown.
 
 3. The width of a link line represents the **weight** of the next run's topic (whereas color is the same as the previous node).
 
 
 4. The location of topic nodes along the horizontal axis **does not** represent time period. If a topic is present in all the runs, then it will start from <span style="color:#1fff22">**2022-08**</span> on the left most side and go right till <span style="color:#00ffff">**2023-01**</span>.
 
-5. However, if a topic emerges in later run, let's say in <span style="color:#9d75c2">**2023-09**</span> then the left most node for that topic will be purple reprenting a start in <span style="color:#9d75c2">**2023-09**</span>.
+5. However, if a topic emerges in later run, let's say in <span style="color:#9d75c2">**2023-09**</span> then the left most node for that topic will be purple representing a start in <span style="color:#9d75c2">**2023-09**</span>.
 
 6. Similarly, a topic having a link for only two or three runs/colors means it's corresponding topic was absent in the other runs.
 
@@ -39,5 +39,5 @@
 
 9. Some of the outlier topics for the last run (aqua color) could be newly emerging topics. For example: 202301,405_mirna_microrna_mir_21.
 
-10. When a topic's width increases compared to it's tributaries that shows an increasing weight of that topic.
+10. When a topic's width increases compared to it's tributaries, that shows an increasing weight of that topic.
 

@@ -1,5 +1,5 @@
 # EmergingResearchTopics2022
- Sankey diagram web preview For Emerging Research Topics during late 2022
+ Sankey diagram web preview For Emerging Research Topics during late 2022 generated using BERTtopic on semanticscholar data for 6 months. The topics extracted from BERTtopic over 6 months are then linked together to see a temporal pattern of emerging, merging, diverging or fading research topics.
 
 
 [View sankey diagram here](https://tabahi.github.io/EmergingResearchTopics2022/)
